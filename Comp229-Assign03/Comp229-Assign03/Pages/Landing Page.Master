@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Landing Page.master.cs" Inherits="Comp229_Assign03.Pages.Landing_Page" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<link rel="stylesheet" type="text/css" href="../Scripts/Landingpage.css"  />
+    <style type="text/css">
+        .auto-style1 {
+            text-decoration: underline;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
+        .auto-style2 {
+            width: 918px;
+        }
+        .auto-style5 {
+            width: 306px;
+            text-align: center;
+        }
+        .auto-style6 {
+            width: 305px;
+            text-align: center;
+        }
+        .auto-style12 {
+            margin-left: 12px;
+        }
+        .auto-style8 {
+            margin-left: 27px;
+        }
+        .auto-style9 {
+            margin-left: 31px;
+        }
+        .auto-style13 {
+            margin-left: 320px;
+        }
+    </style>
+</head>
+<body>
+
+   <div> <img src="../Images/school_banner.jpg" style="width: 872px; margin-left: 87px" /> 
+        &nbsp;&nbsp;</div>
+
+    <p style="margin-left: 293px" aria-dropeffect="popup" class="auto-style1">
+
+        <strong class="auto-style1">Ottawa Group of Schools
+    </strong>
+    </p>
+    <p style="margin-left: 293px" aria-dropeffect="popup">
+
+        This is a student management system. Allows you to <br />
+        manage and view student info.
+        <br />
+     <br />
+    </p>
+    <div>
+
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style6"><a href="home.aspx" style="color: #FFFFFF; text-decoration: none; font-family: Algerian; font-size: large; font-style: italic;">Home</a></td>
+                <td class="auto-style6" style="font-family: Algerian; font-size: large"><a href="student.aspx" style="font-style: italic; color: #FFFFFF">StudentInfo</a></td>
+                <td class="auto-style5"><a href="CoursePage.aspx" style="font-family: Algerian; font-size: large; font-style: italic; color: #FFFFFF">Course Enrollment</a></td>
+            </tr>
+        </table>
+
+    </div>
+     <br />
+    <form id="form1" runat="server">
+    <div class="auto-style13">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            First Middle Name<asp:TextBox ID="txtFirstMidName" runat="server" CssClass="auto-style12"></asp:TextBox>
+            <br />
+    Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtLastName" runat="server" CssClass="auto-style8" Width="124px"></asp:TextBox>
+    <br />
+    Student ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:TextBox ID="txtStudentID" runat="server" CssClass="auto-style9" OnTextChanged="txtStudentID_TextChanged"></asp:TextBox>
+    <br />
+    
+            
+        </asp:ContentPlaceHolder>
+        
+        <br />
+        <footer>
+            &copy; ALRINA DMELLO, ASSIGNMENT 03
+        </footer>
+    </div>
+    </form>
+</body>
+</html>
